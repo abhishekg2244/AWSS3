@@ -1,0 +1,12 @@
+name: S3createandupload
+on: [workflow_dispatch]
+
+jobs:
+  awslogin:
+    runs-on: default
+    steps:
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4.1.0
+        with:
+          aws-region: us-east-1
+  
