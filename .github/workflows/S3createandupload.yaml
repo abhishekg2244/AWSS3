@@ -25,6 +25,7 @@ jobs:
       - name: uploadfileintobucket
         run: | 
           cd ..
+          cd  AWSS3
           dir
           aws s3 cp index.html s3://frontendui12072025  
         shell: pwsh
