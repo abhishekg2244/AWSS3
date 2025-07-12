@@ -15,4 +15,11 @@ jobs:
     steps:
       - name: createbucket
         run: aws s3 mb s3://frontendui12072025
+
+  uploadfileintobucket:
+    runs-on: self-hosted
+    steps:
+      - name: uploadfileintobucket
+        run: aws s3 cp index.html s3://frontendui12072025
+      
   
