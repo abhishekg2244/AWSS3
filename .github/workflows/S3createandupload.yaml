@@ -20,7 +20,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: uploadfileintobucket
-        run: ls
+        run: dir
         # run: aws s3 cp index.html s3://frontendui12072025
       
   
