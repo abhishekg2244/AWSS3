@@ -9,4 +9,10 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4.1.0
         with:
           aws-region: us-east-1
+          
+  createbucket:
+    runs-on: self-hosted
+    steps:
+      - name: createbucket
+        run: aws s3 mb s3://frontendui12072025
   
