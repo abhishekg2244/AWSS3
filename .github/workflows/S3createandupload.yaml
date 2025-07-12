@@ -21,6 +21,7 @@ jobs:
     steps:
       - name: uploadfileintobucket
         run: dir
+        shell: pwsh
         # run: aws s3 cp index.html s3://frontendui12072025
       
   
